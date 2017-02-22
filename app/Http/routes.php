@@ -37,9 +37,11 @@ Route::get('years', function () {
 Route::get('vehicle_name', function () {
     return view('forms.vehicle_name');
 });
-Route::get('login', function () {
+Route::get('/login', function () {
     return view('forms.login');
 });
-Route::get('signup', function () {
-    return view('forms.signup');
+Route::get('/sign_up', function () {
+    return view('forms.sign_up');
 });
+
+Route::post('/forms/sign_up','AddUserController@addUser');

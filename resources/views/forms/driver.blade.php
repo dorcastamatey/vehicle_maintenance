@@ -9,6 +9,14 @@
         
           <Script src='{{ asset("/src/js/jquery-3.1.1.min.js")}}' type ='text/javascript'></Script>
          <Script src='{{ asset("/src/js/bootstrap.min.js")}}' type ='text/javascript'></Script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript">
+            $( function() {
+                $( "#datepicker" ).datepicker();
+            } );
+        </script>
+
         
     </head>
 
@@ -314,13 +322,13 @@
                
                 <form>
                   <div class="form-group">
-                    <div class='input-group date' id='datetimepicker1'>
+<!--                    <div class='input-group date' id='datepicker'>-->
                     <!-- <label for "enter-year" >Enter year</label> -->
-                    <input type='text' class="form-control" name="year" id="enter-year" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
+                    <input type='text' class="form-control" name="year" id="enter-year" id='datepicker' />
+<!--                    <span class="input-group-addon">-->
+<!--                        <span class="glyphicon glyphicon-calendar"></span>-->
+<!--                    </span>-->
+<!--                </div>-->
             
                     <!-- <label for "enter-year" >Enter year</label>
                     <input type="date" name="year" id="enter-year" class='form-control' >
@@ -344,10 +352,6 @@
       
     
     </body>
-    <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker1').datetimepicker();
-            });
-      </script>
+
  
 </html>

@@ -31,7 +31,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li> -->
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-plus">Enter Record <b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-plus"> Enter Record <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="#"  >Driver</a></li>
               <li><a href="#"  >Maintenance</a></li>
@@ -45,7 +45,7 @@
           </li>
 
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">  <span class="glyphicon glyphicon-eye-open">View Records</span> <b class="caret" ></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">  <span class="glyphicon glyphicon-eye-open"> View Records</span> <b class="caret" ></b></a>
             <ul class="dropdown-menu">
               <li><a href="#">Driver</a></li>
               <li><a href="#">Maintenace</a></li>

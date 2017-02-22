@@ -25,9 +25,17 @@
            <div class="col-sm-4"></div>
            
            </div>
-      <form>
-        <div class="form-group">
-        <h3> Sign up<h3>
+             @if(Session::has('message'))
+              <p>{{Session::get('message')}}</p>
+             @endif
+
+             @foreach($errors->all() as $errors)
+             <p> <li class="glyphicon glyphicon-warning-sign"> {{$errors}}</p>
+             @endforeach
+
+      <form  action="{{ url('/forms/sign_up') }}" method="post">
+          {{ csrf_field() }}        <div class="form-group">
+        <h3> Sign up</h3>
             
           <label for "Name" >Name </label>
           <input type="text" name="name" id="name" class='form-control'>
@@ -41,7 +49,8 @@
           <label for "password" >password</label>
           <input type="password" name="password" id="password" class='form-control'>
         </div>
-        <button type="button" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
 
       </form>
       </div>

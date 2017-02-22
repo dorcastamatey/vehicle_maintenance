@@ -27,37 +27,38 @@
         <a class="navbar-brand" href="#">Vehicle Records </a>
       </div>
       <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav navbar-right" >
           <!-- <li class="active"><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li> -->
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-plus">Enter Record <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Driver</a></li>
-              <li><a href="#">Maintenance</a></li>
-              <li><a href="#">Trek</a></li>
-              <!-- <li class="divider"></li> -->
-              <li><a href="#">Vehicle name</a></li>
-              <li><a href="#">Vehicle details</a></li>
-              
-            </ul>
-          </li>
+<!--          <li class="dropdown">-->
+<!--            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-plus">Enter Record <b class="caret"></b></a>-->
+<!--            <ul class="dropdown-menu">-->
+<!--              <li><a href="#">Driver</a></li>-->
+<!--              <li><a href="#">Maintenance</a></li>-->
+<!--              <li><a href="#">Trek</a></li>-->
+<!--              <!-- <li class="divider"></li> -->-->
+<!--              <li><a href="#">Vehicle name</a></li>-->
+<!--              <li><a href="#">Vehicle details</a></li>-->
+<!--              -->
+<!--            </ul>-->
+<!--          </li>-->
 
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">  <span class="glyphicon glyphicon-eye-open">View Records</span> <b class="caret" ></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Driver</a></li>
-              <li><a href="#">Maintenace</a></li>
-              <li><a href="#">Trek</a></li>
-              <!-- <li class="divider"></li> -->
-              <li><a href="#">Vehicle name</a></li>
-              <li><a href="#">Vehicle details</a></li>
-              
-            </ul>
-          </li>
-          <li id="position1"><a href="#" >Sign Up</a></li>
-          <li id="position2"><a href="#about" >Login</a></li>
+<!--          <li class="dropdown">-->
+<!--            <a href="#" class="dropdown-toggle" data-toggle="dropdown">  <span class="glyphicon glyphicon-eye-open">View Records</span> <b class="caret" ></b></a>-->
+<!--            <ul class="dropdown-menu">-->
+<!--              <li><a href="#">Driver</a></li>-->
+<!--              <li><a href="#">Maintenance</a></li>-->
+<!--              <li><a href="#">Trek</a></li>-->
+<!--              <!-- <li class="divider"></li> -->-->
+<!--              <li><a href="#">Vehicle name</a></li>-->
+<!--              <li><a href="#">Vehicle details</a></li>-->
+<!--              -->
+<!--            </ul>-->
+<!--          </li>-->
+          <li id="position2"><a href="{{url('login')}}" >Login</a></li>
+          <li id="position1"><a href="{{url('sign_up')}}" >Sign up</a></li>
+
           <!-- <li><a href="#contact">Contact</a></li> -->
         </ul>
       </div><!--/.nav-collapse -->
