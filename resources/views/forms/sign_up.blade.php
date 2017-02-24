@@ -26,15 +26,16 @@
            
            </div>
              @if(Session::has('message'))
-              <p>{{Session::get('message')}}</p>
+              <p class=" alert alert-success glyphicon glyphicon-save">{{Session::get('message')}}</p>
              @endif
 
              @foreach($errors->all() as $errors)
-             <p> <li class="glyphicon glyphicon-warning-sign"> {{$errors}}</p>
+             <p> <li class=" alert alert-warning glyphicon glyphicon-warning-sign"> {{$errors}}</p>
              @endforeach
 
-      <form  action="{{ url('/forms/sign_up') }}" method="post">
-          {{ csrf_field() }}        <div class="form-group">
+      <form  action="{{ url('/forms/sign_up') }}" method="post" >
+          {{ csrf_field() }}
+                 <div class="form-group">
         <h3> Sign up</h3>
             
           <label for "Name" >Name </label>
