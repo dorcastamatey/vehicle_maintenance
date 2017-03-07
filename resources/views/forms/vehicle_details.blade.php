@@ -22,7 +22,8 @@
            <div class="col-sm-4"></div>
            
            </div>
-      <form>
+      <form action="{{ url('/forms/input_forms') }}" method="post">
+          {{ csrf_field() }}
       	<div class="form-group">
       	    
       		<label for "model_name" >Model name</label>
@@ -46,7 +47,7 @@
       		<input type="date" name="year_bought" id="year_bought" class='form-control'>
         </div>
 
-        <button type="button" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
 
       </form>
       </div>

@@ -27,4 +27,8 @@ class vehicleDetailsController extends Controller
 
 
    }
+    public function viewVehicleDetails(){
+        $details=vehicleDetailsModel::all();
+        return view('forms.viewDetails',compact('details'));
+    }
 }

@@ -26,4 +26,10 @@ class yearController extends Controller
         return redirect()->back()->withError('Error');
 
 }
+//    public function viewYear(){
+//        $year=yearModel::all();
+//
+//
+//return view('forms.input_forms',compact('year'));
+//}
 }

@@ -26,4 +26,8 @@ class maintenanceController extends Controller
         $add->save();
         return redirect()->back()->with('message','Success');
     }
+    public function viewMaintenance(){
+        $maintain= maintenanceModel::all();
+        return view('forms.viewMaintenance',compact('maintain'));
+    }
 }

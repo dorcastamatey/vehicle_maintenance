@@ -22,11 +22,33 @@ class driversController extends Controller
 
     }
     public function displayDriver(){
-        $nerds = Nerd::all();
+        //connect to model to get all drivers
 
-        // load the view and pass the nerds
-        return View::make('nerds.index')
-            ->with('nerds', $nerds);
-        return view('nerds.index',compact('nerds'));
+      // var_dump($driver);
+        $driver = drivers::all();
+
+
+//        return View::make('forms.viewDriver')
+//            ->with('driver', $driver);
+        //connect to the form to display all drivers
+       return view('forms.viewDriver',compact('driver'));
+    }
+
+
+    public function editDriver($id){
+//        $edit=drivers::find($id);
+
+        //connect to the form and edit it
+        $driver=drivers::where('driver_id',$id)->first();
+       // return $driver;
+
+      return view('forms.viewDriver',compact('driver'));
+    }
+    public function updateDriver(Request $request,$id){
+        $driver=drivers::where('driver_id',$id)->first();
+        $driver->updateDriver($request->all());
+        return redirect('/forms/viewDriver');
+
+
     }
 }

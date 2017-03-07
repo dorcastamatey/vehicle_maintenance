@@ -30,4 +30,9 @@ class trekController extends Controller
         $add->save();
         return redirect()->back()->with('message','Success');
     }
+    public function viewTrek(){
+        $trek=trekModel::all();
+
+        return view('forms.viewTrek',compact('trek'));
+    }
 }
