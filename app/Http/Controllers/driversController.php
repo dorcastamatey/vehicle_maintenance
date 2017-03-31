@@ -39,15 +39,18 @@ class driversController extends Controller
 //        $edit=drivers::find($id);
 
         //connect to the form and edit it
-        $driver=drivers::where('driver_id',$id)->first();
-       // return $driver;
+        //$driver=drivers::find($id);
+       $driver=drivers::where('driver_id',$id)->first();
+        //return $driver;
 
-      return view('forms.viewDriver',compact('driver'));
+      return view('forms.edit',compact('driver'));
     }
     public function updateDriver(Request $request,$id){
         $driver=drivers::where('driver_id',$id)->first();
+        //drivers::find($id)->updateDriver($request->all());
         $driver->updateDriver($request->all());
         return redirect('/forms/viewDriver');
+
 
 
     }

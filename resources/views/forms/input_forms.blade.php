@@ -307,6 +307,17 @@
                     <label for "Registration-number" >Registration Number</label>
                     <input type="text" name="Registration_number" id="Registration_number" class='form-control'>
                   </div>
+                    <div class="form-group">
+
+                        <label for "vehicle_id" >Vehicle ID</label>
+                        <input type="text" name="vehicle_id" id="vehicle_id" class='form-control'>
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for "year_id" >Year ID</label>
+                        <input type="text" name="year_id" id="year_id" class='form-control'>
+                    </div>
 
                   <div class="form-group">
 
@@ -318,7 +329,7 @@
                     </select>
                   </div>
 
-                  <button type="button" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
 
               </div>

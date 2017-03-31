@@ -11,6 +11,7 @@
             <td>Next Date</td>
             <td>Cost of maintenance</td>
             <td>Fault</td>
+            <td>Edit</td>
         </tr>
 
         </thead>

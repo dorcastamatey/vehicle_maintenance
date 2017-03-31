@@ -1,25 +1,6 @@
-@include('forms.header2')
-
-<div class="container">
- <body>
-<div class="container">
-
-    <!-- <beginning of driver's form > -->
-
-
-    <div class="modal fade" id="driverModal" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Add Driver</h4>
-                </div>
-                <div class="modal-body">
-
-                    <form   action="{{ url('/forms/input_forms1') }}" method="post">
+                    <form   action="/forms/{{$driver->driver_id}}" method="post">
                         {{ csrf_field() }}
+                        {{method_field('PUT')}}
                         <div class="form-group">
 
                             <label for "first_name" >First name</label>
@@ -30,18 +11,5 @@
                             <input type="text" name="last_name" id="last_name" class='form-control'>
 
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
                     </form>
-
-                </div>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-
-    </div>
-</div>
- </body>
-</div>

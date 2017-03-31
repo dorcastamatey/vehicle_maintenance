@@ -28,6 +28,7 @@ class maintenanceController extends Controller
     }
     public function viewMaintenance(){
         $maintain= maintenanceModel::all();
+       // var_dump($maintain);
         return view('forms.viewMaintenance',compact('maintain'));
     }
 }

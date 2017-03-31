@@ -13,14 +13,18 @@ class vehicleDetailsController extends Controller
    public function addVehicleDetails(Request $request){
        $model=Input::get('model_name');
        $reg_no=Input::get('Registration_number');
-       $vehicle=Input::get('vehilce_name');
+       $vehicle=Input::get('vehicle_name');
+       $vehicle_id=Input::get('vehicle_id');
+       $year_id=Input::get('year_id');
        $year=Input::get('year_bought');
 
        $add= new vehicleDetailsModel;
        $add->model=$model;
        $add->reg_no=$reg_no;
-       $add->vehicle_id=$vehicle;
-       $add->year_id=$year;
+       $add->vehicle_id=$vehicle_id;
+       $add->vehicle_name=$vehicle;
+       $add->year_id=$year_id;
+       $add->year=$year;
        $add->save();
        return redirect()->back()->with('message','Success');
 
@@ -29,6 +33,7 @@ class vehicleDetailsController extends Controller
    }
     public function viewVehicleDetails(){
         $details=vehicleDetailsModel::all();
-        return view('forms.viewDetails',compact('details'));
+        //var_dump($details);
+        return view('forms.viewVehicleDetails',compact('details'));
     }
 }
